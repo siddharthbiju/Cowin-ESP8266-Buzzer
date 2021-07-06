@@ -207,7 +207,7 @@ void look_for_sessions(JsonObject centre, String centre_number){
 
     if(session["min_age_limit"]>=MIN_AGE_LIMIT){
       if(session[dose]>0){
-        //digitalWrite(D1, LOW);  //Turn Alarm ON
+        digitalWrite(D1, LOW);  //Turn Alarm ON
         Serial.println("yey! vaccines are available");
         Serial.println(String(centre["name"]));
         Serial.println(String(session["date"]));
